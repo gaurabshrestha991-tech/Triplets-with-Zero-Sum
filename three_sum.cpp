@@ -54,3 +54,27 @@ public:
         return result;
     }
 };
+
+int main () 
+{
+    Solution obj;
+
+    vector<int> nums= {-1,0,1,2,-1,-4};
+
+    vector<vector<int>> result = obj.threeSum(nums);
+
+    cout << "Tripless that sum to 0:\n";
+
+    for(const auto& triple : result) {
+        cout << "[ ";
+
+        for (int num : triple) {
+            cout << num << " ";
+        }
+
+        cout << "]" << endl;
+    }
+    return 0;
+    
+    return 0;
+}
